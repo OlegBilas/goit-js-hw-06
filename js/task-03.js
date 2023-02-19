@@ -21,6 +21,6 @@ const createElementOfList = ({ url, alt }) => {
 };
 
 const textHTML = images.map(createElementOfList).join('');
-console.log(textHTML);
+
 const ingredientsRef = document.querySelector('.gallery');
 ingredientsRef.insertAdjacentHTML('afterbegin', textHTML);
