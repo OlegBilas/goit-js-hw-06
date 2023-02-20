@@ -20,9 +20,9 @@ function createBoxes(amount) {
 
   while (i <= amount) {
     const divRef = document.createElement('div');
-    divRef.style.backgroundColor = getRandomHexColor;
+    divRef.style.backgroundColor = getRandomHexColor();
     divRef.style.height = String(size + i * 10) + 'px';
-    divRef.style.weight = String(size + i * 10) + 'px';
+    divRef.style.width = divRef.style.height;
     boxesRef.appendChild(divRef);
     i += 1;
   }
