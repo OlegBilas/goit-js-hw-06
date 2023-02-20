@@ -31,7 +31,7 @@ button {
   gap: 30px;
 }
 
-.gallery > li {
+.gallery__item {
   border-radius: 30px;
   overflow: hidden;
 }

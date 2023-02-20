@@ -16,7 +16,7 @@ const images = [
 const createElementOfList = ({ url, alt }) => {
   return `
   <li>
-    <img src="${url}" alt="${alt}" width="1260"/>
+    <img class="gallery__item" src="${url}" alt="${alt}" width="1260"/>
   </li>`;
 };
 
