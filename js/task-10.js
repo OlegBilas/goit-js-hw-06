@@ -17,15 +17,17 @@ createBoxesBtn.addEventListener('click', () => {
 function createBoxes(amount) {
   let i = 1;
   const size = 30;
+  const collection = [];
 
   while (i <= amount) {
     const divRef = document.createElement('div');
     divRef.style.backgroundColor = getRandomHexColor();
     divRef.style.height = String(size + i * 10) + 'px';
     divRef.style.width = divRef.style.height;
-    boxesRef.appendChild(divRef);
+    collection.push(divRef);
     i += 1;
   }
+  boxesRef.append(...collection);
 }
 
 destroyBoxesBtn.addEventListener('click', () => {
